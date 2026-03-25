@@ -83,6 +83,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mama_cuc {
+            get {
+                object obj = ResourceManager.GetObject("mama_cuc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap max_поможет {
             get {
                 object obj = ResourceManager.GetObject("max_поможет", resourceCulture);
@@ -136,6 +146,16 @@ namespace WindowsFormsApp3.Properties {
         internal static System.Drawing.Bitmap telegram_logo_icon_1472281 {
             get {
                 object obj = ResourceManager.GetObject("telegram_logo_icon_1472281", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap v_md {
+            get {
+                object obj = ResourceManager.GetObject("v-md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

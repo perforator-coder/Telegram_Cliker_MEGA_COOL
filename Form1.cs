@@ -13,9 +13,10 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private int hamster_coin = 0;
+        private long hamster_coin = 0;
         private SoundPlayer Player_67 = new SoundPlayer();
         private bool Play_on = false;
+        private int power_tap = 1;
         
         public Form1()
         {
@@ -23,7 +24,7 @@ namespace WindowsFormsApp3
             button6.Visible = false;
         }
 
-
+       
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -44,7 +45,7 @@ namespace WindowsFormsApp3
             {
                 button6.Visible = false;
             }
-            hamster_coin++;
+            hamster_coin += power_tap;
             label2.Text = hamster_coin.ToString();
             pictureBox1.Visible = true; 
         }
@@ -94,7 +95,13 @@ namespace WindowsFormsApp3
                 cucumber.Show();
                 hamster_coin -= 100;
                 label2.Text = hamster_coin.ToString();
-                button6.Visible = false;
+                power_tap++;
+                if (!(hamster_coin >= 100))
+                {
+                    button6.Visible = false;
+                }
+                
+                
             }
             else 
             {

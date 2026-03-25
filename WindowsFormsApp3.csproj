@@ -177,7 +177,9 @@
     <Content Include="Gazan_67_Six_Seven.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\mama_cuc.png" />
     <Content Include="Resources\max.ico" />
+    <None Include="Resources\v-md.gif" />
     <None Include="Resources\vid_gazanchik.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
