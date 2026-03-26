@@ -13,10 +13,12 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 0;
+        private int hamster_coin = 200;
         private SoundPlayer Player_67 = new SoundPlayer();
         private bool Play_on = false;
         private int power_tap = 1;
+        private bool max_pay = false;
+        private bool count_click = false;
         
         public Form1()
         {
@@ -37,6 +39,19 @@ namespace WindowsFormsApp3
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //обработка клика
+            hamster_coin += power_tap;
+            label2.Text = hamster_coin.ToString();
+            pictureBox1.Visible = true;
+            //показывание или скрытие при наборе очков
+            if (hamster_coin >= 200)
+            {
+                checkBox1.Visible = true; 
+            }
+            else
+            {
+                checkBox1.Visible = false;
+            }
             if (hamster_coin >= 100)
             {
                 button6.Visible = true;
@@ -45,14 +60,22 @@ namespace WindowsFormsApp3
             {
                 button6.Visible = false;
             }
-            hamster_coin += power_tap;
-            label2.Text = hamster_coin.ToString();
-            pictureBox1.Visible = true; 
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            //секрет
+            if (!count_click)
+            {
+                count_click = true;
+                this.Text = $"Сила Клика = {power_tap}";
+            }
+            else 
+            {
+                count_click = false;
+                this.Text = "Hamster Combat";
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -69,7 +92,8 @@ namespace WindowsFormsApp3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+         
+            //6767676767676767
             Player_67.SoundLocation = "Gazan_67_Six_Seven.wav";
             if (Play_on == false)
             {
@@ -92,20 +116,63 @@ namespace WindowsFormsApp3
             if (hamster_coin >= 100)
             {
                 Cucumber_Image cucumber = new Cucumber_Image();
-                cucumber.Show();
-                hamster_coin -= 100;
-                label2.Text = hamster_coin.ToString();
-                power_tap++;
-                if (!(hamster_coin >= 100))
+                if (max_pay)
                 {
-                    button6.Visible = false;
+                    //действия при поставленой галочой
+                    int max_upgrade = hamster_coin / 100;
+                    power_tap += max_upgrade;
+                    for (int i = 0; i < max_upgrade; i++)
+                    {
+                        Cucumber_Image add_max_count = new Cucumber_Image();
+                        add_max_count.Show();
+                    }
+                    hamster_coin = hamster_coin / (100 * max_upgrade);
+                    label2.Text = hamster_coin.ToString();
+                    if (!(hamster_coin >= 100))
+                    {
+                        button6.Visible = false;
+                        checkBox1.Visible = false;
+                    }
+                   
+
                 }
+                else 
+                {
+                    cucumber.Show();
+                    hamster_coin -= 100;
+                    label2.Text = hamster_coin.ToString();
+                    power_tap++;
+                    //скрытие gui
+                    if (!(hamster_coin >= 100))
+                    {
+                        button6.Visible = false;
+                        checkBox1.Visible = false;
+                    }
+                    else if (hamster_coin >= 100 && hamster_coin < 200)
+                    {
+                        checkBox1.Visible = false;
+                    }
+
+                } 
                 
-                
+            }
+            //обновление показа силы клика
+            if (count_click == true)
+            {
+                this.Text = $"Сила Клика = {power_tap}";
+            }
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                max_pay = true;
             }
             else 
             {
-                //вставте сюда смешной код
+                max_pay = false;
             }
         }
     }

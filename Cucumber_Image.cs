@@ -16,7 +16,8 @@ namespace WindowsFormsApp3
         private List<Image> images = new List<Image>
         { 
             Properties.Resources.v_md,
-            Properties.Resources.mama_cuc
+            Properties.Resources.mama_cuc,
+            Properties.Resources.v_in_can
             };
 
         private Random Random_index = new Random();
@@ -36,6 +37,9 @@ namespace WindowsFormsApp3
                     break;
                 case 1:
                     this.Text = "О НЕТ ОГУРЦЫ СЬЕЛИ";
+                    break;
+                case 2:
+                    this.Text = "О НЕТ ТОЛЬКО НЕ БАНКА -- V";
                     break;
             }
             pictureBox1.Image = images[index_meme];

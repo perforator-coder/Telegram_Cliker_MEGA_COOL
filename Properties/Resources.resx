@@ -136,22 +136,25 @@
   <data name="vid_gazanchik" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vid_gazanchik.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mama_cuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mama_cuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i-_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i-_2_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v-md.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Снимок экрана 2026-03-16 110200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Снимок экрана 2026-03-16 110200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="telegram_logo_icon_1472281" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\telegram_logo_icon_1472281.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\v-md.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="i-_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\i-_2_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="4321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4321.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mama_cuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mama_cuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="v-in-can" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v-in-can.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
