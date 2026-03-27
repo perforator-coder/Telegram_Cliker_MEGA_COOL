@@ -13,7 +13,7 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private int hamster_coin = 200;
+        private long hamster_coin = 0;
         private SoundPlayer Player_67 = new SoundPlayer();
         private bool Play_on = false;
         private int power_tap = 1;
@@ -115,16 +115,25 @@ namespace WindowsFormsApp3
         {
             if (hamster_coin >= 100)
             {
-                Cucumber_Image cucumber = new Cucumber_Image();
+                
                 if (max_pay)
                 {
                     //действия при поставленой галочой
-                    int max_upgrade = hamster_coin / 100;
-                    power_tap += max_upgrade;
+                    int max_upgrade = (int)hamster_coin / 100;
+                    
                     for (int i = 0; i < max_upgrade; i++)
                     {
                         Cucumber_Image add_max_count = new Cucumber_Image();
                         add_max_count.Show();
+                        if (add_max_count.isEPIC)
+                        {
+                            power_tap += 4;
+                        }
+                        else 
+                        {
+                            power_tap++;
+                        }
+                        
                     }
                     hamster_coin = hamster_coin / (100 * max_upgrade);
                     label2.Text = hamster_coin.ToString();
@@ -138,10 +147,20 @@ namespace WindowsFormsApp3
                 }
                 else 
                 {
+                    Cucumber_Image cucumber = new Cucumber_Image();
                     cucumber.Show();
                     hamster_coin -= 100;
                     label2.Text = hamster_coin.ToString();
-                    power_tap++;
+                    //обработка свойства isEPIC
+                    if (cucumber.isEPIC)
+                    {
+                        power_tap += 4;
+                    }
+                    else
+                    {
+                        power_tap++;
+                    }
+                   
                     //скрытие gui
                     if (!(hamster_coin >= 100))
                     {

@@ -139,9 +139,6 @@
   <data name="mama_cuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mama_cuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="i-_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\i-_2_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="v-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v-md.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,10 +148,19 @@
   <data name="telegram_logo_icon_1472281" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\telegram_logo_icon_1472281.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4321.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="v-in-can" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v-in-can.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hagiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hagiev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bank).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="v_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="melon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\melon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
