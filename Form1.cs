@@ -13,7 +13,7 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 0; // Главный счесчик
+        private long hamster_coin = 1000; // Главный счесчик
         private SoundPlayer Player_67 = new SoundPlayer(); // 67
         private bool Play_on = false; // проверка что есть музыка 67
         private int power_tap = 1; // сила клика 
@@ -113,6 +113,7 @@ namespace WindowsFormsApp3
 
         private void button6_Click(object sender, EventArgs e)
         {
+         
             if (hamster_coin >= 100)
             {
                 
@@ -180,6 +181,17 @@ namespace WindowsFormsApp3
             {
                 this.Text = $"Сила Клика = {power_tap}";
             }
+            /*Console.WriteLine("#СПИСОК НАЙДЕНЫХ МЕМОВ#");
+            foreach (var i in Cucumber_Image.ListFindMEME)
+            {
+               
+                Console.WriteLine(i);
+            }*/ //проверка списка найденых
+            /*Console.WriteLine("СПИСОК МЕМОВ");
+            foreach (var i in Cucumber_Image.ListMEME)
+            {
+                Console.WriteLine(i);
+            }*/ //проверка списка всех мемов
 
         }
 
