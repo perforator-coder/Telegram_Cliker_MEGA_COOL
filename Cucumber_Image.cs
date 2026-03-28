@@ -31,30 +31,20 @@ namespace WindowsFormsApp3
         };
         private Random random_shanc = new Random(); //рандомное число на эпичный мем
         private Random Random_index = new Random(); // рандом для листа
-        static private Dictionary<Image,bool> FindMEMES_local = new Dictionary<Image, bool>() //должен хранить какие мемы уже найдены 
-        {
-            { Properties.Resources.mama_cuc,false},
-            { Properties.Resources.hagiev,false },
-            { Properties.Resources.v_md,false },
-            { Properties.Resources.v_in_can,false},
-            { Properties.Resources.fat_epstein,false},
-            { Properties.Resources.edit_epstein_mega_cool,false},
-            { Properties.Resources.ice_bac,false}
-        }; // pss Я хз как мне пройтись по всем фото ,
-           // так как по ключам выдает лишь BITMAP как заменить его на другой на путь к файлу хз
-           // есть идея добавить посередине картинку а слева и справа кнопки для перелистования
+        // У меня не получислось сделать словарик с картинкой и его состоянием :(((((((((((((
+        // если я создам и укажу Propertis.Resources.[Название фото] то потом будет в ключе BitMap
         public Cucumber_Image()
         {
             InitializeComponent();
-           
             LoadMEME();
-            FindMEMES = FindMEMES_local;// передаем список найденых мемов
+           
         }
         //свойство для получения эпичный ли мем или нет
         public bool isEPIC { get; set; }
-        public static Dictionary<Image,bool> FindMEMES { get; set; }
+       
         private void LoadMEME()
         {
+          
             int Epic_chose = random_shanc.Next(0,101);
             int index_meme = 0;
             if (Epic_chose >= 5) // уровень шанса
@@ -64,16 +54,16 @@ namespace WindowsFormsApp3
                 {
                     case 0:
                         this.Text = "О НЕТ ОГУРЦЫ СЬЕЛИ";
-                        FindMEMES_local[Properties.Resources.mama_cuc] = true;
+                        
                         break;
                     case 1:
                         this.Text = "ОРЕШКИ БИГ БОБ";
-                        FindMEMES_local[Properties.Resources.hagiev] = true;
+                      
                         this.Icon = Properties.Resources.melon;
                         break;
                     case 2:
                         this.Text = "ДЯДЯ ЖИРШТЕЙН";
-                        FindMEMES_local[Properties.Resources.fat_epstein] = true;
+                       
                         this.Icon = Properties.Resources.hamburger;
                         break;
                     
@@ -92,22 +82,22 @@ namespace WindowsFormsApp3
                     case 0:
                         this.Text = "Не повезло >:)  -- V";
                         this.Icon = Properties.Resources.v_icon;
-                        FindMEMES_local[Properties.Resources.v_md] = true;
+                        
                         break;
                     case 1:
                         this.Text = "О НЕТ ТОЛЬКО НЕ БАНКА -- V";
                         this.Icon = Properties.Resources.bank;
-                        FindMEMES_local[Properties.Resources.v_in_can] = true;
+                        
                         break;
                     case 2:
                         this.Text = "ГДЕ ТО НА ОСТРОВЕ";
                         this.Icon = Properties.Resources.island;
-                        FindMEMES_local[Properties.Resources.edit_epstein_mega_cool] = true;
+                        
                         break;
                     case 3:
                         this.Text = "🍧";
                         this.Icon = Properties.Resources.tink;
-                        FindMEMES_local[Properties.Resources.ice_bac] = true;
+                       
                         break;
 
                 }
