@@ -73,10 +73,60 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap edit_epstein_mega_cool {
+            get {
+                object obj = ResourceManager.GetObject("edit_epstein_mega_cool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fat_epstein {
+            get {
+                object obj = ResourceManager.GetObject("fat_epstein", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap hagiev {
             get {
                 object obj = ResourceManager.GetObject("hagiev", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon hamburger {
+            get {
+                object obj = ResourceManager.GetObject("hamburger", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ice_bac {
+            get {
+                object obj = ResourceManager.GetObject("ice_bac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon island {
+            get {
+                object obj = ResourceManager.GetObject("island", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -157,6 +207,16 @@ namespace WindowsFormsApp3.Properties {
             get {
                 object obj = ResourceManager.GetObject("telegram_logo_icon_1472281", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon tink {
+            get {
+                object obj = ResourceManager.GetObject("tink", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

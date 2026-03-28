@@ -13,12 +13,12 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 0;
-        private SoundPlayer Player_67 = new SoundPlayer();
-        private bool Play_on = false;
-        private int power_tap = 1;
-        private bool max_pay = false;
-        private bool count_click = false;
+        private long hamster_coin = 1000; // Главный счесчик
+        private SoundPlayer Player_67 = new SoundPlayer(); // 67
+        private bool Play_on = false; // проверка что есть музыка 67
+        private int power_tap = 1; // сила клика 
+        private bool max_pay = false; // проверка что поставлена галочка
+        private bool count_click = false; // проверка что показывается сила клика
         
         public Form1()
         {

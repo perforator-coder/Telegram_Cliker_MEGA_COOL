@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -29,5 +30,6 @@ using System.Runtime.InteropServices;
 //      Номер сборки
 //      Редакция
 //
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.2")]
+[assembly: AssemblyVersion("67.67.67.67")]
+[assembly: AssemblyFileVersion("2.0.0.3")]
+[assembly: NeutralResourcesLanguage("ru")]
