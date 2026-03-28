@@ -13,9 +13,7 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 1000; // Главный счесчик
-        private SoundPlayer Player_67 = new SoundPlayer(); // 67
-        private bool Play_on = false; // проверка что есть музыка 67
+        private long hamster_coin = 0; // Главный счесчик
         private int power_tap = 1; // сила клика 
         private bool max_pay = false; // проверка что поставлена галочка
         private bool count_click = false; // проверка что показывается сила клика
@@ -94,19 +92,8 @@ namespace WindowsFormsApp3
         {
          
             //6767676767676767
-            Player_67.SoundLocation = "Gazan_67_Six_Seven.wav";
-            if (Play_on == false)
-            {
-                Play_With_67 Form_67 = new Play_With_67();
-                Form_67.Show();
-                Player_67.Play();
-                Play_on = true;
-            }
-            else 
-            {
-                Player_67.Stop();
-                Play_on = false;
-            }
+            Play_With_67 form67 = new Play_With_67();
+            form67.Show();
             
             
         }
