@@ -17,6 +17,9 @@ namespace WindowsFormsApp3
         private int power_tap = 1; // сила клика 
         private bool max_pay = false; // проверка что поставлена галочка
         private bool count_click = false; // проверка что показывается сила клика
+        private Random Random = new Random();
+        private int shans = -100;
+        //private bool MGE_find = false;
         
         public Form1()
         {
@@ -41,6 +44,18 @@ namespace WindowsFormsApp3
             hamster_coin += power_tap;
             label2.Text = hamster_coin.ToString();
             pictureBox1.Visible = true;
+            int random_shans = Random.Next(1, 10000);
+            if (random_shans <= shans )
+            {
+                Play_With_67 MGE = new Play_With_67(true);
+                hamster_coin -= (hamster_coin / 100) * 15;
+                MGE.Show();
+                shans = -100;
+            }
+            else           
+            {
+                shans += 1;
+            }
             //показывание или скрытие при наборе очков
             if (hamster_coin >= 200)
             {
@@ -92,7 +107,7 @@ namespace WindowsFormsApp3
         {
          
             //6767676767676767
-            Play_With_67 form67 = new Play_With_67();
+            Play_With_67 form67 = new Play_With_67(false);
             form67.Show();
             
             

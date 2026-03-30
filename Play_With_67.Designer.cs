@@ -40,9 +40,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox67.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox67.Image = global::WindowsFormsApp3.Properties.Resources.vid_gazanchik;
-            this.pictureBox67.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox67.Location = new System.Drawing.Point(-1, -2);
             this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(1363, 703);
+            this.pictureBox67.Size = new System.Drawing.Size(686, 379);
             this.pictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox67.TabIndex = 0;
             this.pictureBox67.TabStop = false;
@@ -52,7 +52,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 702);
+            this.ClientSize = new System.Drawing.Size(683, 375);
             this.Controls.Add(this.pictureBox67);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
