@@ -49,7 +49,7 @@ namespace WindowsFormsApp3
             {
                 Play_With_67 MGE = new Play_With_67(true);
                 hamster_coin -= (hamster_coin / 100) * 15;
-                MGE.Show();
+                MGE.ShowDialog();
                 shans = -100;
             }
             else           
