@@ -40,13 +40,14 @@ namespace WindowsFormsApp3
                 this.ControlBox = false;
                 this.ShowInTaskbar = false;
                 pictureBox67.Image = image;
-                Player_67.SoundLocation = "mge.wav";
+                Player_67.SoundLocation = "sound/mge.wav";
                 Player_67.Play();
+                
                  
             }
             else
             {
-                Player_67.SoundLocation = "Gazan_67_Six_Seven.wav";
+                Player_67.SoundLocation = "sound/Gazan_67_Six_Seven.wav";
 
                 Player_67.PlayLooping();
             }

@@ -6,9 +6,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace WindowsFormsApp3
 {
@@ -31,6 +31,7 @@ namespace WindowsFormsApp3
         };
         private Random random_shanc = new Random(); //рандомное число на эпичный мем
         private Random Random_index = new Random(); // рандом для листа
+        
         private static Dictionary<string, bool> MEME_status = new Dictionary<string, bool>() // словарь для сохранения статуса найденого мема
         {
             { "mama_cuc",false},
@@ -50,6 +51,7 @@ namespace WindowsFormsApp3
             { "v_in_can",Properties.Resources.v_in_can},
             { "edit_epstein_mega_cool",Properties.Resources.edit_epstein_mega_cool},
             { "ice_bac",Properties.Resources.ice_bac}
+            
         };
        
 
@@ -58,8 +60,14 @@ namespace WindowsFormsApp3
             InitializeComponent();
             LoadMEME();
             ListFindMEME = MEME_status;
+            Timer timer = new Timer();
+            timer.Interval = 10000;
+            timer.Tick += new EventHandler(timer_stop);
+            timer.Start();
             
-           
+
+
+
         }
         //свойство для получения эпичный ли мем или нет
         public bool isEPIC { get; set; }
@@ -70,7 +78,8 @@ namespace WindowsFormsApp3
        
         private void LoadMEME()
         {
-          
+            
+            
             int Epic_chose = random_shanc.Next(0,101);
             int index_meme = 0;
             if (Epic_chose >= 5) // уровень шанса
@@ -138,8 +147,11 @@ namespace WindowsFormsApp3
             }*/
             
         }
-       
-        
+
+        private void timer_stop(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             

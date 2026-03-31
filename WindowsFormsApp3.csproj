@@ -179,12 +179,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Gazan_67_Six_Seven.wav">
+    <Content Include="sound\Gazan_67_Six_Seven.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\v-in-can.gif" />
     <None Include="Resources\mama_cuc.png" />
-    <Content Include="mge.wav">
+    <Content Include="sound\mge.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\max.ico" />
