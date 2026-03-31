@@ -41,6 +41,7 @@ namespace WindowsFormsApp3
         private void button2_Click(object sender, EventArgs e)
         {
             //обработка клика
+            
             hamster_coin += power_tap;
             label2.Text = hamster_coin.ToString();
             pictureBox1.Visible = true;
