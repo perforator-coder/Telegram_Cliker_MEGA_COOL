@@ -1,4 +1,5 @@
 ﻿using LibVLCSharp.Shared;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,9 +10,12 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Newtonsoft.Json.Serialization;
 
 namespace WindowsFormsApp3
 {
+   
     public partial class Form1 : Form
     {
         private long hamster_coin = 0; // Главный счесчик
@@ -25,8 +29,31 @@ namespace WindowsFormsApp3
 
         public Form1()
         {
+           
             InitializeComponent();
+            ReadJson();
             button6.Visible = false;
+            label2.Text = hamster_coin.ToString();
+            if (hamster_coin >= 200)
+            {
+                checkBox1.Visible = true;
+
+            }
+            else
+            {
+                checkBox1.Visible = false;
+            }
+            if (hamster_coin >= 100)
+            {
+                button6.Visible = true;
+                numericUpDown1.Visible = true;
+            }
+            else
+            {
+                button6.Visible = false;
+                numericUpDown1.Visible = false;
+            }
+            this.FormClosed += new FormClosedEventHandler(save_json);
         }
 
        
@@ -237,6 +264,26 @@ namespace WindowsFormsApp3
                 return true;
             }
         }
+        private void save_json(object sender, EventArgs e) // для сохранения кликов после закрытия
+        {
+            var save_data = new { coin = hamster_coin, power_clik = power_tap, MEMES_find = Cucumber_Image.ListFindMEME, Find_Video = Play_With_67.Get_Video };
+            string json_info = JsonConvert.SerializeObject(save_data);
+            File.WriteAllText("USER_info.json",json_info);
+            
+        }
+        private void ReadJson()
+        {
+            if (File.Exists("USER_info.json"))
+            {
+                string Json_info = File.ReadAllText("USER_info.json");
+                json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info);
+                hamster_coin = Data.coin;
+                power_tap = Data.power_clik;
+                Cucumber_Image.ListFindMEME = Data.Find_meme;
+                Play_With_67.Get_Video = Data.Find_Video;
+            }
+        }
+       
     }
 }
 

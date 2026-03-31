@@ -44,6 +44,7 @@ namespace WindowsFormsApp3
             { "ice_bac",false},
             { "NO_DADA",false},
             { "ONLYLINUX",false}
+           
         };
         private static readonly Dictionary<string, Image> MEME_LIST = new Dictionary<string, Image>() //словарь для сохранения списка всех мемов
         {
