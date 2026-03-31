@@ -14,7 +14,7 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 5000; // Главный счесчик
+        private long hamster_coin = 0; // Главный счесчик
         private int power_tap = 1; // сила клика 
         private bool max_pay = false; // проверка что поставлена галочка
         private bool count_click = false; // проверка что показывается сила клика

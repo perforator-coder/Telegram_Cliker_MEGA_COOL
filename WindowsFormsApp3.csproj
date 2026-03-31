@@ -249,9 +249,6 @@
     </Content>
     <None Include="Resources\v-in-can.gif" />
     <None Include="Resources\mama_cuc.png" />
-    <Content Include="sound\mge.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\max.ico" />
     <None Include="Resources\v-md.gif" />
     <None Include="Resources\vid_gazanchik.gif" />
