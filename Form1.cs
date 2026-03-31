@@ -1,10 +1,11 @@
-﻿using System;
-using System.Media;
+﻿using LibVLCSharp.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,14 +14,15 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        private long hamster_coin = 0; // Главный счесчик
+        private long hamster_coin = 5000; // Главный счесчик
         private int power_tap = 1; // сила клика 
         private bool max_pay = false; // проверка что поставлена галочка
         private bool count_click = false; // проверка что показывается сила клика
-        private Random Random = new Random();
-        private int shans = -100;
-        //private bool MGE_find = false;
-        
+        private Random Random = new Random(); // рандом MGE
+        private int shans = -100; // шанс на MGE
+        public static LibVLC libmedia = new LibVLC(); // Библиотека для vlc
+       
+
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace WindowsFormsApp3
         private void button2_Click(object sender, EventArgs e)
         {
             //обработка клика
-            
+           
             hamster_coin += power_tap;
             label2.Text = hamster_coin.ToString();
             pictureBox1.Visible = true;
@@ -50,6 +52,7 @@ namespace WindowsFormsApp3
             {
                 Play_With_67 MGE = new Play_With_67(true);
                 hamster_coin -= (hamster_coin / 100) * 15;
+                label2.Text = hamster_coin.ToString();
                 MGE.ShowDialog();
                 shans = -100;
             }
@@ -124,6 +127,7 @@ namespace WindowsFormsApp3
                 {
                     //действия при поставленой галочой
                     int max_upgrade = (int)hamster_coin / 100;
+                    int ost = (int)hamster_coin % 100;//проблема
                     
                     for (int i = 0; i < max_upgrade; i++)
                     {
@@ -139,7 +143,7 @@ namespace WindowsFormsApp3
                         }
                         
                     }
-                    hamster_coin = hamster_coin / (100 * max_upgrade);
+                    hamster_coin = ost;
                     label2.Text = hamster_coin.ToString();
                     if (!(hamster_coin >= 100))
                     {

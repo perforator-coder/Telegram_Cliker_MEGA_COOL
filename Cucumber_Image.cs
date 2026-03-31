@@ -31,7 +31,7 @@ namespace WindowsFormsApp3
         };
         private Random random_shanc = new Random(); //рандомное число на эпичный мем
         private Random Random_index = new Random(); // рандом для листа
-        
+        private static int all_open_memes = 0; //количество всех мемов открытых мемов
         private static Dictionary<string, bool> MEME_status = new Dictionary<string, bool>() // словарь для сохранения статуса найденого мема
         {
             { "mama_cuc",false},
@@ -61,7 +61,7 @@ namespace WindowsFormsApp3
             LoadMEME();
             ListFindMEME = MEME_status;
             Timer timer = new Timer();
-            timer.Interval = 10000;
+            timer.Interval = 5000;
             timer.Tick += new EventHandler(timer_stop);
             timer.Start();
             
@@ -81,71 +81,26 @@ namespace WindowsFormsApp3
             
             
             int Epic_chose = random_shanc.Next(0,101);
-            int index_meme = 0;
-            if (Epic_chose >= 5) // уровень шанса
+            if (all_open_memes >= 15) // если обычных мемов найдено более 15
             {
-                index_meme = Random_index.Next(images.Count);
-                switch (index_meme)
-                {
-                    case 0:
-                        this.Text = "О НЕТ ОГУРЦЫ СЬЕЛИ";
-                        MEME_status["mama_cuc"] = true;
-                        break;
-                    case 1:
-                        this.Text = "ОРЕШКИ БИГ БОБ";
-                        MEME_status["hagiev"] = true;
-                        this.Icon = Properties.Resources.melon;
-                        break;
-                    case 2:
-                        this.Text = "ДЯДЯ ЖИРШТЕЙН";
-                        MEME_status["fat_epstein"] = true;
-                        this.Icon = Properties.Resources.hamburger;
-                        break;
-                    
-                        
-                }
-                isEPIC = false;
-                pictureBox1.Image = images[index_meme];
+                LegendaryMEME();
             }
-            else 
+            else
             {
-                //код если число <= n
-                // код для показа особых мемов
-                index_meme = Random_index.Next(EPIC_MEMES.Count);
-                switch (index_meme)
+                if (Epic_chose >= 5) // уровень шанса
                 {
-                    case 0:
-                        this.Text = "Не повезло >:)  -- V";
-                        this.Icon = Properties.Resources.v_icon;
-                        MEME_status["v_md"] = true; 
-                        break;
-                    case 1:
-                        this.Text = "О НЕТ ТОЛЬКО НЕ БАНКА -- V";
-                        this.Icon = Properties.Resources.bank;
-                        MEME_status["v_in_can"] = true;
-                        break;
-                    case 2:
-                        this.Text = "ГДЕ ТО НА ОСТРОВЕ";
-                        this.Icon = Properties.Resources.island;
-                        MEME_status["edit_epstein_mega_cool"] = true;
-                        break;
-                    case 3:
-                        this.Text = "🍧";
-                        this.Icon = Properties.Resources.tink;
-                        MEME_status["ice_bac"] = true;
-                        break;
-
+                    SimpleMEME();
                 }
-                isEPIC = true;
-                pictureBox1.Image = EPIC_MEMES[index_meme];
-               
+                else
+                {
+                    LegendaryMEME();
+                }
                 
             }
-           /* foreach (var i in MEME_status)
-            { 
-                Console.WriteLine(i);
-            }*/
-            
+            /* foreach (var i in MEME_status)
+                 { 
+                     Console.WriteLine(i);
+                 }*/
         }
 
         private void timer_stop(object sender, EventArgs e)
@@ -156,6 +111,66 @@ namespace WindowsFormsApp3
         {
             
 
+        }
+        private void LegendaryMEME()
+        {
+            //код если число <= n
+            // код для показа особых мемов
+            int index_meme = 0;
+            index_meme = Random_index.Next(EPIC_MEMES.Count);
+            switch (index_meme)
+            {
+                case 0:
+                    this.Text = "Не повезло >:)  -- V";
+                    this.Icon = Properties.Resources.v_icon;
+                    MEME_status["v_md"] = true;
+                    break;
+                case 1:
+                    this.Text = "О НЕТ ТОЛЬКО НЕ БАНКА -- V";
+                    this.Icon = Properties.Resources.bank;
+                    MEME_status["v_in_can"] = true;
+                    break;
+                case 2:
+                    this.Text = "ГДЕ ТО НА ОСТРОВЕ";
+                    this.Icon = Properties.Resources.island;
+                    MEME_status["edit_epstein_mega_cool"] = true;
+                    break;
+                case 3:
+                    this.Text = "🍧";
+                    this.Icon = Properties.Resources.tink;
+                    MEME_status["ice_bac"] = true;
+                    break;
+
+            }
+            isEPIC = true;
+            all_open_memes = 0;// если мем найден легиндарным то 0
+            pictureBox1.Image = EPIC_MEMES[index_meme];
+        }
+        private void SimpleMEME()
+        {
+            //Обычные мемы
+            int index_meme = 0;
+            index_meme = Random_index.Next(images.Count);
+            switch (index_meme)
+            {
+                case 0:
+                    this.Text = "О НЕТ ОГУРЦЫ СЬЕЛИ";
+                    MEME_status["mama_cuc"] = true;
+                    break;
+                case 1:
+                    this.Text = "ОРЕШКИ БИГ БОБ";
+                    MEME_status["hagiev"] = true;
+                    this.Icon = Properties.Resources.melon;
+                    break;
+                case 2:
+                    this.Text = "ДЯДЯ ЖИРШТЕЙН";
+                    MEME_status["fat_epstein"] = true;
+                    this.Icon = Properties.Resources.hamburger;
+                    break;
+            }
+            isEPIC = false;
+            all_open_memes += 1; //повышаем шанс на легендарный
+            pictureBox1.Image = images[index_meme];
         }
     }
 }

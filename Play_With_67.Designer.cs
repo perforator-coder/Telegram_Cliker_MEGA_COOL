@@ -62,6 +62,7 @@
             this.videoView1.Size = new System.Drawing.Size(686, 379);
             this.videoView1.TabIndex = 1;
             this.videoView1.Text = "MGE";
+            this.videoView1.Click += new System.EventHandler(this.videoView1_Click);
             // 
             // Play_With_67
             // 

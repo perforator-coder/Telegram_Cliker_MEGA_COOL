@@ -22,7 +22,7 @@ namespace WindowsFormsApp3
     {
         private SoundPlayer Player_67 = new SoundPlayer();
         
-        private MediaPlayer Player ;
+        private MediaPlayer Player = new MediaPlayer(Form1.libmedia) ;
         
 
         public Play_With_67(bool MGE_status)
@@ -35,10 +35,10 @@ namespace WindowsFormsApp3
                 time.Interval = 16000;
                 time.Tick += new EventHandler(timer_stop);
                 time.Start();
-                LibVLC libmedia = new LibVLC();
-                Player = new MediaPlayer(libmedia);
+                
+                
                 videoView1.MediaPlayer = Player;
-                var media = new Media(libmedia, "Media/mge_girl.mp4", FromType.FromPath);
+                var media = new Media(Form1.libmedia, "Media/mge_girl.mp4", FromType.FromPath);
                 this.Icon = Properties.Resources.eye;
                 this.Text = "Вас что-то заметило";
                 Player.Play(media);
@@ -53,8 +53,9 @@ namespace WindowsFormsApp3
                 Player_67.SoundLocation = "sound/Gazan_67_Six_Seven.wav";
                 videoView1.Visible = false;
                 videoView1.Enabled = false;
-                Player_67.PlayLooping();
+                Player_67.Play();
             }
+           
             this.FormClosed += new FormClosedEventHandler(closed_form);
 
         }
@@ -71,6 +72,14 @@ namespace WindowsFormsApp3
         private void closed_form(object sender, EventArgs e)
         {
             Player_67.Stop();
+            Player.Stop();
+
+        }
+       
+
+        private void videoView1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
