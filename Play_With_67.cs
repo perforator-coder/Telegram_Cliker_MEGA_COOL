@@ -21,13 +21,18 @@ namespace WindowsFormsApp3
     public partial class Play_With_67 : Form
     {
         private SoundPlayer Player_67 = new SoundPlayer();//газанFM
-        
+
         private MediaPlayer Player = new MediaPlayer(Form1.libmedia);// vlc плейер
         private List<string> media_list = new List<string>()//список медиа
         {
             "Media/mge_girl.mp4",
             "Media/linux.mp4"
-        };    
+        };
+        private Dictionary<string, bool> List_video_find = new Dictionary<string, bool>()
+        {
+            { "MGE_GIRL",false},
+            { "Linux",false}
+        };
 
         public Play_With_67(bool MGE_status)
         {
@@ -42,9 +47,11 @@ namespace WindowsFormsApp3
                 {
                     case 0:
                         time.Interval = 16000;
+                        List_video_find["MGE_GIRL"] = true;
                         break;
                     case 1:
                         time.Interval = 10000;
+                        List_video_find["Linux"] = true;
                         break;
                 }
                 
@@ -78,10 +85,11 @@ namespace WindowsFormsApp3
                 videoView1.Enabled = false;
                 Player_67.Play();
             }
-           
+            ListVideo = List_video_find;
             this.FormClosed += new FormClosedEventHandler(closed_form);
 
         }
+        public static Dictionary<string, bool> ListVideo { get; set; }
         private void timer_stop(object sender, EventArgs e)
         {
             this.Close();
