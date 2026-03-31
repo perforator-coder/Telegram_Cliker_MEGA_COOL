@@ -64,6 +64,7 @@ namespace WindowsFormsApp3
             if (hamster_coin >= 200)
             {
                 checkBox1.Visible = true; 
+                
             }
             else
             {
@@ -72,10 +73,12 @@ namespace WindowsFormsApp3
             if (hamster_coin >= 100)
             {
                 button6.Visible = true;
+                numericUpDown1.Visible = true;
             }
             else 
             {
                 button6.Visible = false;
+                numericUpDown1.Visible = false;
             }
             
         }
@@ -155,29 +158,36 @@ namespace WindowsFormsApp3
                 }
                 else 
                 {
-                    Cucumber_Image cucumber = new Cucumber_Image();
-                    cucumber.Show();
-                    hamster_coin -= 100;
-                    label2.Text = hamster_coin.ToString();
-                    //обработка свойства isEPIC
-                    if (cucumber.isEPIC)
+                    if (setcol())
                     {
-                        power_tap += 4;
-                    }
-                    else
-                    {
-                        power_tap++;
-                    }
-                   
-                    //скрытие gui
-                    if (!(hamster_coin >= 100))
-                    {
-                        button6.Visible = false;
-                        checkBox1.Visible = false;
-                    }
-                    else if (hamster_coin >= 100 && hamster_coin < 200)
-                    {
-                        checkBox1.Visible = false;
+                        for (int i = 1; i < numericUpDown1.Value + 1; i++)
+                        {
+                            Cucumber_Image cucumber = new Cucumber_Image();
+                            cucumber.Show();
+                            hamster_coin -= 100;
+                            label2.Text = hamster_coin.ToString();
+                            //обработка свойства isEPIC
+                            if (cucumber.isEPIC)
+                            {
+                                power_tap += 4;
+                            }
+                            else
+                            {
+                                power_tap++;
+                            }
+
+                            //скрытие gui
+                            if (!(hamster_coin >= 100))
+                            {
+                                button6.Visible = false;
+                                checkBox1.Visible = false;
+                                numericUpDown1.Visible = false;
+                            }
+                            else if (hamster_coin >= 100 && hamster_coin < 200)
+                            {
+                                checkBox1.Visible = false;
+                            }
+                        }
                     }
 
                 } 
@@ -211,6 +221,20 @@ namespace WindowsFormsApp3
             else 
             {
                 max_pay = false;
+            }
+        }
+        private bool setcol()
+        {
+            int index = (int)numericUpDown1.Value;
+            int need_pay = 100 * index;
+            if (hamster_coin < need_pay)
+            {
+                MessageBox.Show("Недостаточно средств", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else 
+            {
+                return true;
             }
         }
     }

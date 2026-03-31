@@ -141,6 +141,16 @@ namespace WindowsFormsApp3.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon Linux_ONLY {
+            get {
+                object obj = ResourceManager.GetObject("Linux_ONLY", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap mama_cuc {
@@ -186,6 +196,36 @@ namespace WindowsFormsApp3.Properties {
         public static System.Drawing.Bitmap mosp {
             get {
                 object obj = ResourceManager.GetObject("mosp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NO_DADA {
+            get {
+                object obj = ResourceManager.GetObject("NO_DADA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon NOT_FOOD {
+            get {
+                object obj = ResourceManager.GetObject("NOT_FOOD", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ONLYLINUX {
+            get {
+                object obj = ResourceManager.GetObject("ONLYLINUX", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,10 +20,14 @@ namespace WindowsFormsApp3
 {
     public partial class Play_With_67 : Form
     {
-        private SoundPlayer Player_67 = new SoundPlayer();
+        private SoundPlayer Player_67 = new SoundPlayer();//газанFM
         
-        private MediaPlayer Player = new MediaPlayer(Form1.libmedia) ;
-        
+        private MediaPlayer Player = new MediaPlayer(Form1.libmedia);// vlc плейер
+        private List<string> media_list = new List<string>()//список медиа
+        {
+            "Media/mge_girl.mp4",
+            "Media/linux.mp4"
+        };    
 
         public Play_With_67(bool MGE_status)
         {
@@ -31,16 +35,35 @@ namespace WindowsFormsApp3
             this.TopMost = true;
             if (MGE_status)
             {
+                Random random = new Random();
+                int index = random.Next(0,media_list.Count);
                 Timer time = new Timer();
-                time.Interval = 16000;
+                switch (index)// TRUE
+                {
+                    case 0:
+                        time.Interval = 16000;
+                        break;
+                    case 1:
+                        time.Interval = 10000;
+                        break;
+                }
+                
                 time.Tick += new EventHandler(timer_stop);
                 time.Start();
                 
                 
                 videoView1.MediaPlayer = Player;
-                var media = new Media(Form1.libmedia, "Media/mge_girl.mp4", FromType.FromPath);
+                var media = new Media(Form1.libmedia, media_list[index], FromType.FromPath);
                 this.Icon = Properties.Resources.eye;
-                this.Text = "Вас что-то заметило";
+                if (index == 1) // в будущем переписать в case
+                {
+                    this.Text = "ONLYLINUX";
+                }
+                else 
+                {
+                    this.Text = "Вас что-то заметило";
+                }
+                
                 Player.Play(media);
                 this.ShowInTaskbar = false;
 

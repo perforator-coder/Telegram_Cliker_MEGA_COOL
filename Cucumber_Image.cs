@@ -19,19 +19,20 @@ namespace WindowsFormsApp3
             
             Properties.Resources.mama_cuc,
             Properties.Resources.hagiev,
-            Properties.Resources.fat_epstein
-            
+            Properties.Resources.fat_epstein,
+            Properties.Resources.ONLYLINUX
         };
         private List<Image> EPIC_MEMES = new List<Image>() //особые мемы
         {
             Properties.Resources.v_md,
             Properties.Resources.v_in_can,
             Properties.Resources.edit_epstein_mega_cool,
-            Properties.Resources.ice_bac
+            Properties.Resources.ice_bac,
+            Properties.Resources.NO_DADA
         };
         private Random random_shanc = new Random(); //рандомное число на эпичный мем
         private Random Random_index = new Random(); // рандом для листа
-        private static int all_open_memes = 0; //количество всех мемов открытых мемов
+        private static int all_open_memes = 0; //количество всех открытых мемов
         private static Dictionary<string, bool> MEME_status = new Dictionary<string, bool>() // словарь для сохранения статуса найденого мема
         {
             { "mama_cuc",false},
@@ -40,7 +41,9 @@ namespace WindowsFormsApp3
             { "v_md",false},
             { "v_in_can",false},
             { "edit_epstein_mega_cool",false},
-            { "ice_bac",false}
+            { "ice_bac",false},
+            { "NO_DADA",false},
+            { "ONLYLINUX",false}
         };
         private static readonly Dictionary<string, Image> MEME_LIST = new Dictionary<string, Image>() //словарь для сохранения списка всех мемов
         {
@@ -50,7 +53,9 @@ namespace WindowsFormsApp3
             { "v_md",Properties.Resources.v_md},
             { "v_in_can",Properties.Resources.v_in_can},
             { "edit_epstein_mega_cool",Properties.Resources.edit_epstein_mega_cool},
-            { "ice_bac",Properties.Resources.ice_bac}
+            { "ice_bac",Properties.Resources.ice_bac},
+            { "NO_DADA",Properties.Resources.NO_DADA},
+            { "ONLYLINUX",Properties.Resources.ONLYLINUX}
             
         };
        
@@ -118,6 +123,7 @@ namespace WindowsFormsApp3
             // код для показа особых мемов
             int index_meme = 0;
             index_meme = Random_index.Next(EPIC_MEMES.Count);
+            
             switch (index_meme)
             {
                 case 0:
@@ -140,6 +146,11 @@ namespace WindowsFormsApp3
                     this.Icon = Properties.Resources.tink;
                     MEME_status["ice_bac"] = true;
                     break;
+                case 4:
+                    this.Text = "НЕ НАДА ДЯДЯ КОНФЕТКУ";
+                    this.Icon = Properties.Resources.NOT_FOOD;
+                    MEME_status["NO_DADA"] = true;
+                    break;
 
             }
             isEPIC = true;
@@ -151,6 +162,7 @@ namespace WindowsFormsApp3
             //Обычные мемы
             int index_meme = 0;
             index_meme = Random_index.Next(images.Count);
+            
             switch (index_meme)
             {
                 case 0:
@@ -166,6 +178,11 @@ namespace WindowsFormsApp3
                     this.Text = "ДЯДЯ ЖИРШТЕЙН";
                     MEME_status["fat_epstein"] = true;
                     this.Icon = Properties.Resources.hamburger;
+                    break;
+                case 3:
+                    this.Icon = Properties.Resources.Linux_ONLY;
+                    MEME_status["ONLYLINUX"] = true;
+                    this.Text = "ONLYLINUX";
                     break;
             }
             isEPIC = false;
