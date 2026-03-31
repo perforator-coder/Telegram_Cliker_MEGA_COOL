@@ -279,8 +279,7 @@ namespace WindowsFormsApp3
                 json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info);
                 hamster_coin = Data.coin;
                 power_tap = Data.power_clik;
-                Cucumber_Image.ListFindMEME = Data.Find_meme;
-                Play_With_67.Get_Video = Data.Find_Video;
+                
             }
         }
        
