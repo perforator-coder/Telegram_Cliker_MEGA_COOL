@@ -44,6 +44,7 @@ namespace WindowsFormsApp3
             { "ice_bac",false},
             { "NO_DADA",false},
             { "ONLYLINUX",false}
+           
         };
         private static readonly Dictionary<string, Image> MEME_LIST = new Dictionary<string, Image>() //словарь для сохранения списка всех мемов
         {
@@ -77,7 +78,10 @@ namespace WindowsFormsApp3
         //свойство для получения эпичный ли мем или нет
         public bool isEPIC { get; set; }
         //свойство для передачи списка найденых мемов
-        public static Dictionary<string,bool> ListFindMEME { get; set; }
+        public static Dictionary<string,bool> ListFindMEME {
+            get { return MEME_status; }
+            set { MEME_status = value; }
+        }
         // свойство для передачи списка всех мемов
         public static Dictionary<string, Image> ListMEME { get { return MEME_LIST; } }
        
@@ -106,6 +110,7 @@ namespace WindowsFormsApp3
                  { 
                      Console.WriteLine(i);
                  }*/
+            ListFindMEME = MEME_status;
         }
 
         private void timer_stop(object sender, EventArgs e)

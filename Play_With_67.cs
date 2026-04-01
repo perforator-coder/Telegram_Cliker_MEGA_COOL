@@ -21,9 +21,13 @@ namespace WindowsFormsApp3
     public partial class Play_With_67 : Form
     {
         private SoundPlayer Player_67 = new SoundPlayer();//газанFM
-
+        private static Dictionary<string,bool> FindVideo = new Dictionary<string, bool>()
+        {
+            { "MGE_GIRL",false},
+            { "Linux",false}
+        };
         private MediaPlayer Player = new MediaPlayer(Form1.libmedia);// vlc плейер
-        private List<string> media_list = new List<string>()//список медиа
+        private  List<string> media_list = new List<string>()//список медиа
         {
             "Media/mge_girl.mp4",
             "Media/linux.mp4"
@@ -47,11 +51,9 @@ namespace WindowsFormsApp3
                 {
                     case 0:
                         time.Interval = 16000;
-                        List_video_find["MGE_GIRL"] = true;
                         break;
                     case 1:
                         time.Interval = 10000;
-                        List_video_find["Linux"] = true;
                         break;
                 }
                 
@@ -85,7 +87,7 @@ namespace WindowsFormsApp3
                 videoView1.Enabled = false;
                 Player_67.Play();
             }
-            ListVideo = List_video_find;
+           
             this.FormClosed += new FormClosedEventHandler(closed_form);
 
         }
@@ -98,7 +100,9 @@ namespace WindowsFormsApp3
 
         private void pictureBox67_Click(object sender, EventArgs e)
         {
-           // Process.Start("")
+           
+                Process.Start(new ProcessStartInfo("https://max.ru/")); 
+            
         }
         private void closed_form(object sender, EventArgs e)
         {
@@ -106,7 +110,10 @@ namespace WindowsFormsApp3
             Player.Stop();
 
         }
-       
+        public static Dictionary<string, bool> Get_Video {
+            get { return FindVideo; }
+            set { FindVideo = value; }
+        }
 
         private void videoView1_Click(object sender, EventArgs e)
         {
