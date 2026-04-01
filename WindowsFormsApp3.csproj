@@ -157,6 +157,7 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Json_dict.cs" />
     <Compile Include="json_info.cs" />
     <Compile Include="Play_With_67.cs">
       <SubType>Form</SubType>

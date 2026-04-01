@@ -110,6 +110,7 @@ namespace WindowsFormsApp3
                  { 
                      Console.WriteLine(i);
                  }*/
+            ListFindMEME = MEME_status;
         }
 
         private void timer_stop(object sender, EventArgs e)

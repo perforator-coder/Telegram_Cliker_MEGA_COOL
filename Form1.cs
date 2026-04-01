@@ -47,6 +47,7 @@ namespace WindowsFormsApp3
             {
                 button6.Visible = true;
                 numericUpDown1.Visible = true;
+                pictureBox1.Visible = true;
             }
             else
             {
@@ -179,6 +180,7 @@ namespace WindowsFormsApp3
                     {
                         button6.Visible = false;
                         checkBox1.Visible = false;
+                        numericUpDown1.Visible = false;
                     }
                    
 
@@ -266,23 +268,29 @@ namespace WindowsFormsApp3
         }
         private void save_json(object sender, EventArgs e) // для сохранения кликов после закрытия
         {
-            var save_data = new { coin = hamster_coin, power_clik = power_tap, MEMES_find = Cucumber_Image.ListFindMEME, Find_Video = Play_With_67.Get_Video };
+            var save_data = new { coin = hamster_coin, power_clik = power_tap };
             string json_info = JsonConvert.SerializeObject(save_data,Formatting.Indented);
             File.WriteAllText("USER_info.json",json_info);
+            var save_dict = new { Find_meme = Cucumber_Image.ListFindMEME, Find_Video = Play_With_67.Get_Video };
+            string json_info_dict = JsonConvert.SerializeObject(save_dict,Formatting.Indented);
+            File.WriteAllText("USER_DICT.json", json_info_dict);
             
         }
         private void ReadJson()
         {
-            if (File.Exists("USER_info.json"))
+            if (File.Exists("USER_info.json") && File.Exists("USER_DICT.json"))
             {
+
                 string Json_info = File.ReadAllText("USER_info.json");
-                json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info);
+                string Json_dict_input = File.ReadAllText("USER_DICT.json");
+                json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info); // проблема с словариком 
+                Json_dict Data_dict = JsonConvert.DeserializeObject<Json_dict>(Json_dict_input);
                 hamster_coin = Data.coin;
                 power_tap = Data.power_clik;
-                if (Data.Find_meme != null && Data.Find_Video != null)
+                if (Data_dict.Find_meme != null && Data_dict.Find_Video != null) // словари - null!!
                 {
-                    Cucumber_Image.ListFindMEME = Data.Find_meme;
-                    Play_With_67.Get_Video = Data.Find_Video;
+                    Cucumber_Image.ListFindMEME = Data_dict.Find_meme;
+                    Play_With_67.Get_Video = Data_dict.Find_Video;
                 }
             }
         }

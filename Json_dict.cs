@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3
 {
-    public class json_info
+    public class Json_dict
     {
-        public long coin { get; set; }
-        public int power_clik { get; set; }
-      
+        public Dictionary<string, bool> Find_meme { get; set; }
+        public Dictionary<string, bool> Find_Video { get; set; }
     }
 }

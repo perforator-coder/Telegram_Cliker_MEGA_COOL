@@ -96,7 +96,9 @@ namespace WindowsFormsApp3
 
         private void pictureBox67_Click(object sender, EventArgs e)
         {
-           // Process.Start("")
+           
+                Process.Start(new ProcessStartInfo("https://max.ru/")); 
+            
         }
         private void closed_form(object sender, EventArgs e)
         {
