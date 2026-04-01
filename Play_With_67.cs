@@ -21,13 +21,13 @@ namespace WindowsFormsApp3
     public partial class Play_With_67 : Form
     {
         private SoundPlayer Player_67 = new SoundPlayer();//газанFM
-        private Dictionary<string,bool> FindVideo = new Dictionary<string, bool>()
+        private static Dictionary<string,bool> FindVideo = new Dictionary<string, bool>()
         {
             { "MGE_GIRL",false},
             { "Linux",false}
         };
         private MediaPlayer Player = new MediaPlayer(Form1.libmedia);// vlc плейер
-        private List<string> media_list = new List<string>()//список медиа
+        private  List<string> media_list = new List<string>()//список медиа
         {
             "Media/mge_girl.mp4",
             "Media/linux.mp4"
@@ -104,7 +104,10 @@ namespace WindowsFormsApp3
             Player.Stop();
 
         }
-        public static Dictionary<string, bool> Get_Video { get; set; }
+        public static Dictionary<string, bool> Get_Video {
+            get { return FindVideo; }
+            set { FindVideo = value; }
+        }
 
         private void videoView1_Click(object sender, EventArgs e)
         {

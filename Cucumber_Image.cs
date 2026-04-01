@@ -78,7 +78,10 @@ namespace WindowsFormsApp3
         //свойство для получения эпичный ли мем или нет
         public bool isEPIC { get; set; }
         //свойство для передачи списка найденых мемов
-        public static Dictionary<string,bool> ListFindMEME { get; set; }
+        public static Dictionary<string,bool> ListFindMEME {
+            get { return MEME_status; }
+            set { MEME_status = value; }
+        }
         // свойство для передачи списка всех мемов
         public static Dictionary<string, Image> ListMEME { get { return MEME_LIST; } }
        

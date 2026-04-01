@@ -267,7 +267,7 @@ namespace WindowsFormsApp3
         private void save_json(object sender, EventArgs e) // для сохранения кликов после закрытия
         {
             var save_data = new { coin = hamster_coin, power_clik = power_tap, MEMES_find = Cucumber_Image.ListFindMEME, Find_Video = Play_With_67.Get_Video };
-            string json_info = JsonConvert.SerializeObject(save_data);
+            string json_info = JsonConvert.SerializeObject(save_data,Formatting.Indented);
             File.WriteAllText("USER_info.json",json_info);
             
         }
@@ -279,7 +279,11 @@ namespace WindowsFormsApp3
                 json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info);
                 hamster_coin = Data.coin;
                 power_tap = Data.power_clik;
-                
+                if (Data.Find_meme != null && Data.Find_Video != null)
+                {
+                    Cucumber_Image.ListFindMEME = Data.Find_meme;
+                    Play_With_67.Get_Video = Data.Find_Video;
+                }
             }
         }
        
