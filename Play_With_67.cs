@@ -31,7 +31,12 @@ namespace WindowsFormsApp3
         {
             "Media/mge_girl.mp4",
             "Media/linux.mp4"
-        };    
+        };
+        private Dictionary<string, bool> List_video_find = new Dictionary<string, bool>()
+        {
+            { "MGE_GIRL",false},
+            { "Linux",false}
+        };
 
         public Play_With_67(bool MGE_status)
         {
@@ -46,11 +51,9 @@ namespace WindowsFormsApp3
                 {
                     case 0:
                         time.Interval = 16000;
-                        FindVideo["MGE_GIRL"] = true;
                         break;
                     case 1:
                         time.Interval = 10000;
-                        FindVideo["Linux"] = true;
                         break;
                 }
                 
@@ -84,10 +87,11 @@ namespace WindowsFormsApp3
                 videoView1.Enabled = false;
                 Player_67.Play();
             }
-            Get_Video = FindVideo;
+           
             this.FormClosed += new FormClosedEventHandler(closed_form);
 
         }
+        public static Dictionary<string, bool> ListVideo { get; set; }
         private void timer_stop(object sender, EventArgs e)
         {
             this.Close();
