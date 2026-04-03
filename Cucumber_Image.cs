@@ -20,7 +20,8 @@ namespace WindowsFormsApp3
             Properties.Resources.mama_cuc,
             Properties.Resources.hagiev,
             Properties.Resources.fat_epstein,
-            Properties.Resources.ONLYLINUX
+            Properties.Resources.ONLYLINUX,
+            Properties.Resources.hex_MAX
         };
         private List<Image> EPIC_MEMES = new List<Image>() //особые мемы
         {
@@ -43,7 +44,8 @@ namespace WindowsFormsApp3
             { "edit_epstein_mega_cool",false},
             { "ice_bac",false},
             { "NO_DADA",false},
-            { "ONLYLINUX",false}
+            { "ONLYLINUX",false},
+            { "hex_MAX", false}
            
         };
         private static readonly Dictionary<string, Image> MEME_LIST = new Dictionary<string, Image>() //словарь для сохранения списка всех мемов
@@ -56,7 +58,8 @@ namespace WindowsFormsApp3
             { "edit_epstein_mega_cool",Properties.Resources.edit_epstein_mega_cool},
             { "ice_bac",Properties.Resources.ice_bac},
             { "NO_DADA",Properties.Resources.NO_DADA},
-            { "ONLYLINUX",Properties.Resources.ONLYLINUX}
+            { "ONLYLINUX",Properties.Resources.ONLYLINUX},
+            { "hex_MAX", Properties.Resources.hex_MAX}
             
         };
        
@@ -167,7 +170,7 @@ namespace WindowsFormsApp3
             //Обычные мемы
             int index_meme = 0;
             index_meme = Random_index.Next(images.Count);
-            
+            //index_meme = 2;
             switch (index_meme)
             {
                 case 0:
@@ -188,6 +191,11 @@ namespace WindowsFormsApp3
                     this.Icon = Properties.Resources.Linux_ONLY;
                     MEME_status["ONLYLINUX"] = true;
                     this.Text = "ONLYLINUX";
+                    break;
+                case 4:
+                    this.Icon = Properties.Resources.maximka;
+                    MEME_status["hex_MAX"] = true;
+                    this.Text = "Ночной MAXимка";
                     break;
             }
             isEPIC = false;

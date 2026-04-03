@@ -283,11 +283,11 @@ namespace WindowsFormsApp3
 
                 string Json_info = File.ReadAllText("USER_info.json");
                 string Json_dict_input = File.ReadAllText("USER_DICT.json");
-                json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info); // проблема с словариком 
+                json_info Data = JsonConvert.DeserializeObject<json_info>(Json_info); 
                 Json_dict Data_dict = JsonConvert.DeserializeObject<Json_dict>(Json_dict_input);
                 hamster_coin = Data.coin;
                 power_tap = Data.power_clik;
-                if (Data_dict.Find_meme != null && Data_dict.Find_Video != null) // словари - null!!
+                if (Data_dict.Find_meme != null && Data_dict.Find_Video != null) 
                 {
                     Cucumber_Image.ListFindMEME = Data_dict.Find_meme;
                     Play_With_67.Get_Video = Data_dict.Find_Video;

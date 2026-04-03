@@ -123,6 +123,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap hex_MAX {
+            get {
+                object obj = ResourceManager.GetObject("hex_MAX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ice_bac {
             get {
                 object obj = ResourceManager.GetObject("ice_bac", resourceCulture);
@@ -167,6 +177,16 @@ namespace WindowsFormsApp3.Properties {
             get {
                 object obj = ResourceManager.GetObject("max_поможет", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon maximka {
+            get {
+                object obj = ResourceManager.GetObject("maximka", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
