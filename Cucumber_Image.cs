@@ -170,7 +170,7 @@ namespace WindowsFormsApp3
             //Обычные мемы
             int index_meme = 0;
             index_meme = Random_index.Next(images.Count);
-            //index_meme = 2;
+            //index_meme = 4;
             switch (index_meme)
             {
                 case 0:
