@@ -6,6 +6,16 @@ TELEGRAM_CLIKER_NOT_MAX -- Самый абсурдный кликер когда
 
 ЗДЕСЬ ЕСТЬ ВСЕ!!
 
+<p align="center">
+  <sub>Люди которые окажутся в медном бычке.</sub>
+  
+  <a href="https://github.com/vodilapogubam2016">Водитель по губам</a> (ГЕНЕРАТОР ИДЕЙ) 
+  
+  <a href="https://github.com/Kostamirin">Kley_Muner</a> (Помощь в разработке)
+  
+  <a href="https://github.com/perforator-coder">perforator-coder</a> (Разработчик)
+
+</p>
 
 <sub>Все персонажи вымышленные или взяты из открытых источников. Любые совпадения случайны. <br>
 Автор не посягает на чужое авторское право и не монетезирует данный продукт. <br>
