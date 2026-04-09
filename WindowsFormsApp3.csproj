@@ -251,6 +251,9 @@
     <Content Include="Media\linux.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Media\MGE_COW.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Media\mge_girl.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
