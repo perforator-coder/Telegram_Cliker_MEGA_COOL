@@ -54,7 +54,7 @@ namespace WindowsFormsApp3
                         time.Interval = 10000;
                         break;
                     case 2:
-                        time.Interval = 15000;
+                        time.Interval = 17000;
                         break;
 
 
