@@ -73,6 +73,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap edit_epstein_mega_cool {
             get {
                 object obj = ResourceManager.GetObject("edit_epstein_mega_cool", resourceCulture);
@@ -147,6 +157,16 @@ namespace WindowsFormsApp3.Properties {
             get {
                 object obj = ResourceManager.GetObject("island", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap kost {
+            get {
+                object obj = ResourceManager.GetObject("kost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -253,6 +273,26 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap perf {
+            get {
+                object obj = ResourceManager.GetObject("perf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pom {
+            get {
+                object obj = ResourceManager.GetObject("pom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap pug {
             get {
                 object obj = ResourceManager.GetObject("pug", resourceCulture);
@@ -336,6 +376,16 @@ namespace WindowsFormsApp3.Properties {
         public static System.Drawing.Bitmap vid_gazanchik {
             get {
                 object obj = ResourceManager.GetObject("vid_gazanchik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap wincs {
+            get {
+                object obj = ResourceManager.GetObject("wincs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

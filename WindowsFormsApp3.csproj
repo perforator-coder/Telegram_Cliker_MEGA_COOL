@@ -135,6 +135,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUT.Designer.cs">
+      <DependentUpon>ABOUT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cucumber_Image.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABOUT.resx">
+      <DependentUpon>ABOUT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cucumber_Image.resx">
       <DependentUpon>Cucumber_Image.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +266,10 @@
     <Content Include="Media\mge_girl.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\perf.png" />
+    <None Include="Resources\kost.jpg" />
+    <None Include="Resources\pom.jpg" />
+    <None Include="Resources\wincs.png" />
     <Content Include="sound\Gazan_67_Six_Seven.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

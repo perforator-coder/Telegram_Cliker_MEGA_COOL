@@ -121,88 +121,103 @@
   <data name="mosp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mosp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telegram_logo_icon_147228" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telegram_logo_icon_147228.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pug-dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pug-dog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="max_поможет" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\max_поможет.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pug.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="vid_gazanchik" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vid_gazanchik.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mama_cuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mama_cuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="v-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\v-md.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Снимок экрана 2026-03-16 110200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Снимок экрана 2026-03-16 110200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="telegram_logo_icon_1472281" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telegram_logo_icon_1472281.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="v-in-can" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v-in-can.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hagiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hagiev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximka.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bank).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="v_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\v_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kost.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="melon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\melon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fat_epstein" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fat_epstein.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hamburger.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_epstein_mega_cool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_epstein_mega_cool.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="island" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\island.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="v-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v-md.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ice_bac" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ice_bac.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tink.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hagiev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hagiev.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mama_cuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mama_cuc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MGE_GIRL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MGE_GIRL.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bank).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pug-dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pug-dog.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NOT_FOOD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NOT_FOOD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NO_DADA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NO_DADA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Linux_ONLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Linux_ONLY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ONLYLINUX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ONLYLINUX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="v_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\v_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hex_MAX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hex_MAX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maximka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximka.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="max_поможет" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\max_поможет.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_epstein_mega_cool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_epstein_mega_cool.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telegram_logo_icon_1472281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegram_logo_icon_1472281.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telegram_logo_icon_147228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegram_logo_icon_147228.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linux_ONLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linux_ONLY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fat_epstein" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fat_epstein.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pug.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ONLYLINUX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ONLYLINUX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NO_DADA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NO_DADA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="island" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\island.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок экрана 2026-03-16 110200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Снимок экрана 2026-03-16 110200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MGE_GIRL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MGE_GIRL.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tink.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hamburger.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wincs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wincs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

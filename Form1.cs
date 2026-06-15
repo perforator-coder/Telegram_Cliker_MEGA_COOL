@@ -294,7 +294,12 @@ namespace WindowsFormsApp3
                 }
             }
         }
-       
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ABOUT about_form = new ABOUT();
+            about_form.ShowDialog();
+        }
     }
 }
 
