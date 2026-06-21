@@ -21,7 +21,9 @@ namespace WindowsFormsApp3
             Properties.Resources.hagiev,
             Properties.Resources.fat_epstein,
             Properties.Resources.ONLYLINUX,
-            Properties.Resources.hex_MAX
+            Properties.Resources.hex_MAX,
+            Properties.Resources.mainez,
+            Properties.Resources.nuts
         };
         private List<Image> EPIC_MEMES = new List<Image>() //особые мемы
         {
@@ -45,7 +47,9 @@ namespace WindowsFormsApp3
             { "ice_bac",false},
             { "NO_DADA",false},
             { "ONLYLINUX",false},
-            { "hex_MAX", false}
+            { "hex_MAX", false},
+            { "mainez",false},
+            { "DR_goida",false}
            
         };
         private static readonly Dictionary<string, Image> MEME_LIST = new Dictionary<string, Image>() //словарь для сохранения списка всех мемов
@@ -59,8 +63,9 @@ namespace WindowsFormsApp3
             { "ice_bac",Properties.Resources.ice_bac},
             { "NO_DADA",Properties.Resources.NO_DADA},
             { "ONLYLINUX",Properties.Resources.ONLYLINUX},
-            { "hex_MAX", Properties.Resources.hex_MAX}
-            
+            { "hex_MAX", Properties.Resources.hex_MAX},
+            { "mainez",Properties.Resources.mainez},
+            { "DR_goida",Properties.Resources.nuts}
         };
        
 
@@ -197,6 +202,17 @@ namespace WindowsFormsApp3
                     MEME_status["hex_MAX"] = true;
                     this.Text = "Ночной MAXимка";
                     break;
+                case 5:
+                    this.Icon = Properties.Resources.icons8_майонез_100;
+                    MEME_status["mainez"] = true;
+                    this.Text = "Перерыв на рекламу.";
+                    break;
+                case 6:
+                    this.Icon = Properties.Resources.goida_dr;
+                    MEME_status["DR_goida"] = true;
+                    this.Text = "Совет от Dr.Goida";
+                    break;
+
             }
             isEPIC = false;
             all_open_memes += 1; //повышаем шанс на легендарный

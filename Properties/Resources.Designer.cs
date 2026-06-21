@@ -111,6 +111,16 @@ namespace WindowsFormsApp3.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        public static System.Drawing.Icon goida_dr {
+            get {
+                object obj = ResourceManager.GetObject("goida_dr", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap hagiev {
@@ -153,6 +163,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
+        public static System.Drawing.Icon icons8_майонез_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-майонез-100", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
         public static System.Drawing.Icon island {
             get {
                 object obj = ResourceManager.GetObject("island", resourceCulture);
@@ -177,6 +197,16 @@ namespace WindowsFormsApp3.Properties {
             get {
                 object obj = ResourceManager.GetObject("Linux_ONLY", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mainez {
+            get {
+                object obj = ResourceManager.GetObject("mainez", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -257,6 +287,16 @@ namespace WindowsFormsApp3.Properties {
             get {
                 object obj = ResourceManager.GetObject("NOT_FOOD", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap nuts {
+            get {
+                object obj = ResourceManager.GetObject("nuts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
